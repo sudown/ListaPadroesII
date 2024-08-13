@@ -17,7 +17,6 @@ public class MacroCommand implements ICommand {
 
     @Override
     public void store(BufferedWriter writer) throws IOException {
-        writer.write("MacroCommand\n");
         for (ICommand command : this.commands) {
             command.store(writer);
         }
