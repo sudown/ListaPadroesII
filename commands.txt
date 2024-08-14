@@ -1,3 +1,14 @@
-CeilingFanHigh
+TvOff
+LightOn
+LightOff
 CeilingFanLow
 CeilingFanHigh
+TvOn
+TvOff
+LightOn
+CeilingFanLow
+CeilingFanHigh
+TvOn
+CeilingFanOff
+TvOff
+LightOff

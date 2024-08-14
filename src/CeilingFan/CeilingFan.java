@@ -1,3 +1,4 @@
+package CeilingFan;
 public class CeilingFan {
   private String speed;
 

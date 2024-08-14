@@ -1,5 +1,8 @@
+package CeilingFan;
 import java.io.BufferedWriter;
 import java.io.IOException;
+
+import IComand.ICommand;
 
 public class CeilingFanHigh implements ICommand {
   private CeilingFan ceilingFan;

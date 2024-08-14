@@ -1,5 +1,8 @@
+package RemoteControl;
 import java.io.BufferedWriter;
 import java.io.IOException;
+
+import IComand.ICommand;
 
 public class Macro implements ICommand {
   private ICommand[] commands;

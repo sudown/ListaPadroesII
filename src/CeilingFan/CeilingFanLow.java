@@ -1,21 +1,24 @@
+package CeilingFan;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-public class CeilingFanOff implements ICommand {
+import IComand.ICommand;
+
+public class CeilingFanLow implements ICommand {
   private CeilingFan ceilingFan;
 
-  public CeilingFanOff(CeilingFan ceilingFan) {
+  public CeilingFanLow(CeilingFan ceilingFan) {
     this.ceilingFan = ceilingFan;
   }
 
   @Override
   public void execute() {
-    this.ceilingFan.high();
+    this.ceilingFan.low();
     System.out.println(this.ceilingFan.getSpeed());
   }
 
   @Override
   public void store(BufferedWriter writer) throws IOException {
-    writer.write("CeilingFanOff\n");
+    writer.write("CeilingFanLow\n");
   }
 }
