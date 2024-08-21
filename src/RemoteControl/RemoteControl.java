@@ -47,22 +47,13 @@ public class RemoteControl {
   public void pressButton(int index) {
     if (index < commands.size()) {
       commands.get(index).execute();
-      try (BufferedWriter writer = new BufferedWriter(new FileWriter("commands.txt", true))) {
+      try (BufferedWriter writer = new BufferedWriter(new FileWriter("commands.txt", false))) {
         this.commands.get(index).store(writer);
       } catch (IOException e) {
         e.printStackTrace();
       }
     } else {
       System.out.println("Não há um comando para esse botão " + index);
-    }
-  }
-
-  public void storeCommand(int index) {
-    this.commands.get(index).execute();
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter("commands.txt", true))) {
-      this.commands.get(index).store(writer);
-    } catch (IOException e) {
-      e.printStackTrace();
     }
   }
 

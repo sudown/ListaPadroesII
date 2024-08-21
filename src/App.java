@@ -38,7 +38,7 @@ public class App {
     remoteControl.addCommand(commands[3]);
     remoteControl.addCommand(commands[5]);
 
-    remoteControl.pressButton(0);
-    // remoteControl.loadCommands();
+    //remoteControl.pressButton(0);
+    remoteControl.loadCommands();
   }
 }
